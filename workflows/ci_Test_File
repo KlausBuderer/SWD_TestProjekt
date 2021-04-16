@@ -1,0 +1,12 @@
+name: The most simple action ever
+
+on: 
+  push:
+    paths:
+    -.github/workflows/example-action_push.yml
+    
+  jobs:
+    print-stuff:
+      runs-on: ubuntu-latest
+      steps:
+      -run: echo "Actions are amazing"
